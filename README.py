@@ -3,7 +3,7 @@
 import streamlit as st 
 import pickle 
 from PIL import Image
-
+pip install scikit-learn
 def main():
     st.title(':red[HEART FAILURE PREDICTION]')
     image=Image.open(r'/Users/wynnthomasthomas/Downloads/PHOTO-2026-01-28-21-05-00.jpg')
@@ -16,17 +16,17 @@ def main():
         sex=1
     else:
         sex=0
-    cp=st.text_input('cp','tYPE here')
-    trestbps=st.text_input('trestbps','tYPE here')
-    chol=st.text_input('chol','tYPE here')
-    fbs=st.text_input('fbs','tYPE here')
-    restecg=st.text_input('restecg','tYPE here')
-    thalach=st.text_input('thalach','tYPE here')
-    exang=st.text_input('exang','tYPE here')
-    oldpeak=st.text_input('oldpeak','tYPE here')
-    slope=st.text_input('slope','tYPE here')
-    ca=st.text_input('ca','tYPE here')
-    thal=st.text_input('thal','tYPE here')
+    cp=st.text_input('cp','TYPE HERE')
+    trestbps=st.text_input('trestbps','TYPE HERE')
+    chol=st.text_input('chol','TYPE HERE')
+    fbs=st.text_input('fbs','TYPE HERE')
+    restecg=st.text_input('restecg','TYPE HERE')
+    thalach=st.text_input('thalach','TYPE HERE')
+    exang=st.text_input('exang','TYPE HERE')
+    oldpeak=st.text_input('oldpeak','TYPE HERE')
+    slope=st.text_input('slope','TYPE HERE')
+    ca=st.text_input('ca','TYPE HERE')
+    thal=st.text_input('thal','TYPE HERE')
 
     f=[age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal]
     model1=pickle.load(open('model_knn.sav1','rb'))
