@@ -1,6 +1,6 @@
-# deploy
-use deploy to create a form for client
-mport streamlit as st 
+## deploy
+##use deploy to create a form for client
+import streamlit as st 
 import pickle 
 from PIL import Image
 
