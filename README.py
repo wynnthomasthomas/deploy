@@ -3,7 +3,7 @@
 import streamlit as st 
 import pickle 
 from PIL import Image
-pip install scikit-learn
+
 def main():
     st.title(':red[HEART FAILURE PREDICTION]')
     image=Image.open(r'/Users/wynnthomasthomas/Downloads/PHOTO-2026-01-28-21-05-00.jpg')
